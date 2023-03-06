@@ -60,5 +60,16 @@ Festival.create([
     },
     ])
 
+Festival.all.each do |festival|
+    rand(1..5).times do 
+    Review.create(
+        comment: Faker::Lorem.sentence,
+        festival_id: festival.id
+    )
+    end
+end
+
+
+
 
 puts "✅ Done seeding!"

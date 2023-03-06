@@ -7,4 +7,9 @@ class ApplicationController < Sinatra::Base
     festival.to_json
   end
 
+  get "/reviews" do 
+    review = Review.all
+    review.to_json
+  end
+
 end

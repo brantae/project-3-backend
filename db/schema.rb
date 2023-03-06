@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_06_041613) do
+ActiveRecord::Schema.define(version: 2023_03_06_044952) do
 
   create_table "festivals", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2023_03_06_041613) do
     t.string "month_of_year"
     t.string "website"
     t.integer "rank"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "comment"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "festival_id"
   end
 
 end
