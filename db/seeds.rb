@@ -10,7 +10,7 @@ Festival.create([
         rank: 1
     },
     {
-        name: "Opelika Songwrites Festival",
+        name: "Opelika Songwriters Festival",
         city: "Opelika",
         month_of_year: "October",
         website: "https://www.opelikasongwritersfestival.com/",
