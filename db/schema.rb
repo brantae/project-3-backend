@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_06_044952) do
+ActiveRecord::Schema.define(version: 2023_03_06_231556) do
 
   create_table "festivals", force: :cascade do |t|
     t.string "name"
     t.string "city"
-    t.string "month_of_year"
+    t.string "month"
     t.string "website"
-    t.integer "rank"
   end
 
   create_table "reviews", force: :cascade do |t|
