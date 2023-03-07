@@ -31,3 +31,7 @@ The backend is now set up! Please head to the [front end](https://github.com/bra
 ## Stretch Goals
 
 It is pretty basic for now. Plans for images, headliners, dark/light mode, and more will be in the works!
+
+## Credits
+
+Special thanks to [Jones Around The World](https://www.jonesaroundtheworld.com/music-festivals-in-alabama/) for his dope site on Alabama's best music festivals.
