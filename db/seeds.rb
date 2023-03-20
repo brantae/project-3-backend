@@ -1,6 +1,7 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
+# rake db:reset
 Festival.create([
     {
         name: "Hangout Fest",

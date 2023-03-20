@@ -4,8 +4,9 @@ class ApplicationController < Sinatra::Base
   # festival routes
   get "/festivals" do
     festival = Festival.all
-    festival.to_json
+    festival.to_json(include: :reviews) #
   end
+
 
   get "/festivals/:id" do
     festival = Festival.find(params[:id])
@@ -19,13 +20,13 @@ class ApplicationController < Sinatra::Base
       month: params[:month],
       website: params[:website]
     )
-    festival.to_json
+    festival.to_json #
   end
 
-  delete "/festivals/:id" do 
-    festival = Festival.find(params[:id])
-    festival.destroy
-  end
+  # delete "/festivals/:id" do 
+  #   festival = Festival.find(params[:id])
+  #   festival.destroy
+  # end
 
   # review routes
   # get "/reviews" do 
